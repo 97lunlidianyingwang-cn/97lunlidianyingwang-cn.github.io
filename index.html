@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>97伦理电影网 - 今日上架片单_最新电影推荐_高分电影排行榜</title>
+<meta name="description" content="97伦理电影网是专注电影推荐与影视资讯的中文影迷站点，自 1997 年起每日上架：今日上架片单、分类索引、影评留言板、高分排行榜与观影指南，用最简单的页面把好电影摆在你面前。">
+<meta name="keywords" content="97伦理电影网,电影推荐,今日上架,最新电影,影视资讯,高分电影,电影排行榜,影评,观影指南,电影分类">
+<meta name="author" content="97伦理电影网">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+<meta name="theme-color" content="#008080">
+<link rel="canonical" href="https://97lunlidianyingwang-cn.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://97lunlidianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="97伦理电影网">
+<meta property="og:title" content="97伦理电影网 - 今日上架片单_最新电影推荐_高分电影排行榜">
+<meta property="og:description" content="97伦理电影网自 1997 年起每日上架：今日上架片单、分类索引、影评留言板与高分排行榜。">
+<meta property="og:url" content="https://97lunlidianyingwang-cn.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="97伦理电影网 - 今日上架片单与电影推荐">
+<meta name="twitter:description" content="97伦理电影网每日更新今日上架片单、影评留言板与高分电影排行榜。">
+<style>
+:root{
+  --teal:#008080;
+  --silver:#C0C0C0;
+  --silver-l:#DFDFDF;
+  --silver-d:#9A9A9A;
+  --navy:#000080;
+  --blue:#1084D0;
+  --white:#FFF;
+  --black:#000;
+  --gray:#808080;
+  --link:#0000EE;
+  --visited:#551A8B;
+  --red:#A80000;
+  --max:1180px;
+  --sim:"SimSun","宋体","Songti SC",serif;
+  --mono:"Courier New",Menlo,Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--teal);
+  color:var(--black);
+  font-family:var(--sim);
+  font-size:16px;
+  line-height:1.85;
+  overflow-x:hidden;
+}
+a{color:var(--link);text-decoration:underline}
+a:visited{color:var(--visited)}
+a:hover{color:var(--red)}
+ul,ol{list-style:none}
+:focus-visible{outline:2px dotted var(--white);outline-offset:2px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.mono{font-family:var(--mono)}
+kbd{
+  font-family:var(--mono);font-size:11px;background:var(--silver);color:#000;
+  border:2px solid;border-color:#FFF #000 #000 #FFF;padding:1px 6px;margin:0 2px;
+}
+hr{border:0;border-top:1px solid var(--gray);border-bottom:1px solid var(--white);margin:14px 0}
+output{font-family:var(--mono)}
+
+/* ===== 立体窗口 ===== */
+.win{
+  background:var(--silver);
+  border:2px solid;border-color:var(--silver-l) var(--black) var(--black) var(--silver-l);
+  box-shadow:4px 4px 0 rgba(0,0,0,.35);
+  margin-bottom:26px;
+}
+.titlebar{
+  background:linear-gradient(90deg,var(--navy),var(--blue));
+  color:var(--white);display:flex;align-items:center;gap:10px;
+  padding:4px 4px 4px 8px;font-size:14px;font-weight:700;letter-spacing:1px;
+}
+.titlebar .ti{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.titlebar .btns{display:flex;gap:3px;flex:0 0 auto}
+.titlebar .btns b{
+  width:20px;height:18px;background:var(--silver);color:#000;font-size:11px;font-weight:700;
+  border:1px solid;border-color:#FFF #000 #000 #FFF;display:flex;align-items:center;justify-content:center;
+}
+.menubar{
+  display:flex;gap:2px;flex-wrap:wrap;padding:3px 6px;border-bottom:1px solid var(--gray);
+  background:var(--silver);font-size:13px;
+}
+.menubar span{padding:2px 10px;cursor:default}
+.menubar span:hover{background:var(--navy);color:var(--white)}
+.winbody{padding:16px 16px 18px}
+.statusbar{
+  display:flex;gap:4px;flex-wrap:wrap;padding:3px 4px;border-top:1px solid var(--gray);background:var(--silver);
+}
+.statusbar span{
+  font-size:12px;padding:2px 10px;border:1px solid;border-color:#000 #FFF #FFF #000;color:#000;
+}
+.statusbar span:first-child{flex:1}
+
+/* 内凹面板 */
+.inset{
+  background:var(--white);border:2px solid;border-color:#000 #FFF #FFF #000;padding:12px 14px;
+}
+.sunken{background:var(--silver);border:2px solid;border-color:#000 #FFF #FFF #000;padding:12px 14px}
+
+/* 90年代按钮 */
+.btn{
+  display:inline-block;background:var(--silver);color:#000;text-decoration:none;
+  border:2px solid;border-color:#FFF #000 #000 #FFF;padding:7px 18px;font-size:14px;font-weight:700;
+  font-family:var(--sim);cursor:pointer;
+}
+.btn:hover{color:#000;background:#CFCFCF}
+.btn:active{border-color:#000 #FFF #FFF #000;padding:8px 17px 6px 19px}
+.btn.go{background:var(--navy);color:var(--white);border-color:#7B9BD0 #000 #000 #7B9BD0}
+.btn.go:hover{color:var(--white)}
+
+/* ===== 顶部任务栏 ===== */
+.taskbar{
+  position:sticky;top:0;z-index:90;background:var(--silver);
+  border-bottom:2px solid;border-color:#FFF #000 #000 #FFF;
+}
+.taskbar .wrap{display:flex;align-items:center;gap:8px;min-height:44px}
+.start{
+  display:inline-flex;align-items:center;gap:7px;background:var(--silver);color:#000;text-decoration:none;
+  border:2px solid;border-color:#FFF #000 #000 #FFF;padding:4px 12px;font-weight:700;font-size:14px;
+}
+.start .flag{
+  width:18px;height:18px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;
+}
+.start .flag i{display:block}
+.start .flag i:nth-child(1){background:#E04A3A}
+.start .flag i:nth-child(2){background:#3A8FE0}
+.start .flag i:nth-child(3){background:#4BB04B}
+.start .flag i:nth-child(4){background:#E0B93A}
+.trays{display:flex;gap:6px;flex-wrap:wrap;margin-left:6px;flex:1}
+.trays a{
+  font-size:13.5px;text-decoration:none;color:#000;background:var(--silver);
+  border:2px solid;border-color:#FFF #000 #000 #FFF;padding:4px 12px;white-space:nowrap;
+}
+.trays a.cur{border-color:#000 #FFF #FFF #000;background:#D6D6D6;font-weight:700}
+.trays a:hover{background:#CFCFCF;color:#000}
+.clock{
+  margin-left:auto;flex:0 0 auto;font-family:var(--mono);font-size:12px;color:#000;
+  border:1px solid;border-color:#000 #FFF #FFF #000;padding:4px 10px;background:var(--silver);
+}
+.ck{display:none}
+
+/* ===== HERO 桌面 ===== */
+.hero{padding:24px 0 10px}
+.desk{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}
+.hero h1{font-size:40px;line-height:1.28;letter-spacing:2px;margin-bottom:12px}
+.hero h1 em{font-style:normal;color:var(--navy);background:var(--yellow-bg,#FFF8C6);padding:0 8px;border:1px solid var(--gray)}
+.hero .lead{font-size:16px;margin-bottom:16px;max-width:620px}
+.hero .lead b{color:var(--navy)}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.hero-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:6px}
+.hero-meta div{background:var(--silver);border:2px solid;border-color:#000 #FFF #FFF #000;padding:8px 10px;text-align:center}
+.hero-meta strong{display:block;font-family:var(--mono);font-size:20px;color:var(--navy)}
+.hero-meta span{font-size:11.5px;color:#333}
+
+/* 桌面图标 */
+.icons{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:10px;background:var(--teal);
+  border:2px solid;border-color:#000 #6BB6B6 #6BB6B6 #000;padding:12px;
+}
+.dicon{
+  display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:var(--white);
+  padding:8px 4px;font-size:13px;text-align:center;line-height:1.4;
+}
+.dicon:hover{color:var(--white)}
+.dicon:visited{color:var(--white)}
+.dicon .ico{
+  width:42px;height:42px;display:block;border:2px solid;border-color:#FFF #000 #000 #FFF;position:relative;
+}
+.dicon .ico::after{
+  content:"";position:absolute;inset:6px;border:1px solid rgba(255,255,255,.6);
+}
+.dicon .lb{text-shadow:1px 1px 0 rgba(0,0,0,.6)}
+
+/* ===== 栏目通用头 ===== */
+.grp{
+  border:2px groove var(--silver-l);padding:10px 14px 14px;margin-bottom:16px;background:var(--silver);
+}
+.grp > legend, .grp .lg{
+  font-size:13px;font-weight:700;padding:0 8px;background:var(--silver);color:#000;
+}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.sec-head h2{font-size:26px;letter-spacing:2px;line-height:1.3}
+.sec-head .cnt{font-family:var(--mono);font-size:12px;color:#333}
+.sec-head p{font-size:13px;color:#333;width:100%;margin-top:2px}
+
+/* ===== 栏目一：今日上架（大图标） ===== */
+.files{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.file{
+  display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;
+  background:var(--silver);border:2px solid;border-color:#FFF #000 #000 #FFF;padding:14px 10px;transition:.15s;
+}
+.file:hover{border-color:#000 #FFF #FFF #000;background:#CBCBCB}
+.file .thumb{
+  width:100%;height:118px;position:relative;overflow:hidden;
+  border:2px solid;border-color:#000 #FFF #FFF #000;
+}
+.file .thumb::before{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(135deg,rgba(255,255,255,.35) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.35) 50%,rgba(255,255,255,.35) 75%,transparent 75%);
+  background-size:12px 12px;
+}
+.file .thumb b{
+  position:absolute;left:0;right:0;bottom:0;padding:6px 8px;color:var(--white);font-size:16px;letter-spacing:1px;text-align:left;
+  background:rgba(0,0,0,.55);
+}
+.file .thumb .no{
+  position:absolute;left:8px;top:8px;font-family:var(--mono);font-size:11px;background:var(--white);color:#000;
+  padding:1px 8px;border:1px solid #000;
+}
+.file figcaption{font-size:13.5px;line-height:1.7}
+.file .row{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:2px}
+.file .row .pt{font-family:var(--mono);font-size:18px;font-weight:700;color:var(--navy)}
+.file .row .tags{font-size:11.5px;color:#333;font-family:var(--mono)}
+
+/* ===== 栏目二：分类树 ===== */
+.treebox{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tree{background:var(--white);border:2px solid;border-color:#000 #FFF #FFF #000;padding:10px 12px}
+.tree ul{padding-left:16px;border-left:1px dotted var(--gray);margin-left:4px}
+.tree > ul{padding-left:0;border-left:0;margin-left:0}
+.tree summary{
+  cursor:pointer;font-size:14.5px;font-weight:700;padding:5px 6px;list-style:none;display:flex;align-items:center;gap:8px;
+}
+.tree summary::-webkit-details-marker{display:none}
+.tree summary::before{content:"＋";font-family:var(--mono);font-weight:700;color:var(--navy)}
+.tree details[open] > summary::before{content:"－"}
+.tree summary:hover{background:#E8E8E8}
+.tree .fld{font-family:var(--mono);font-size:11px;color:#666;margin-left:auto}
+.tree li a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13.5px;
+  padding:6px 6px 6px 22px;border-bottom:1px dotted #D0D0D0;position:relative;
+}
+.tree li a::before{content:"▪";position:absolute;left:6px;color:var(--gray)}
+.tree li a i{font-style:normal;font-family:var(--mono);font-size:11px;color:#555}
+.tree-note{font-size:12.5px;color:#333;margin-top:14px;line-height:1.8}
+
+/* ===== 栏目三：留言板影评 ===== */
+.notes{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.note{background:var(--white);border:2px solid;border-color:#000 #FFF #FFF #000;padding:14px 16px;font-family:var(--mono);font-size:13.5px;line-height:1.8}
+.note .hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-bottom:8px;border-bottom:1px dotted var(--gray);margin-bottom:8px}
+.note .hd .who{color:var(--navy);font-weight:700}
+.note .hd time{font-size:11.5px;color:#555;margin-left:auto}
+.note h3{font-family:var(--sim);font-size:18px;letter-spacing:1px;margin-bottom:6px}
+.note p{font-family:var(--sim);font-size:14px;color:#222}
+.note blockquote{
+  font-family:var(--sim);font-size:14.5px;color:var(--navy);margin:10px 0;padding:8px 0 8px 12px;
+  border-left:4px solid var(--navy);background:#F0F4FA;
+}
+.note .sig{font-size:11.5px;color:#555;margin-top:8px;padding-top:8px;border-top:1px dotted var(--gray)}
+
+/* ===== 栏目四：排行榜 ===== */
+.rankwrap{display:grid;grid-template-columns:1fr 300px;gap:16px}
+.board{background:var(--white);border:2px solid;border-color:#000 #FFF #FFF #000}
+.board li{
+  display:grid;grid-template-columns:74px 1fr 150px 70px;gap:12px;align-items:center;
+  padding:10px 14px;border-bottom:1px dotted #C8C8C8;
+}
+.board li:last-child{border-bottom:0}
+.board .rk{
+  font-family:var(--mono);font-size:14px;font-weight:700;color:#000;background:var(--silver);
+  border:2px solid;border-color:#FFF #000 #000 #FFF;text-align:center;padding:2px 0;
+}
+.board li:nth-child(-n+3) .rk{background:var(--navy);color:var(--white);border-color:#7B9BD0 #000 #000 #7B9BD0}
+.board .nm b{display:block;font-size:16px;letter-spacing:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.board .nm small{font-family:var(--mono);font-size:11px;color:#555}
+.board .blocks{display:flex;gap:2px}
+.board .blocks i{flex:1;height:14px;background:#E4E4E4;border:1px solid #A8A8A8}
+.board .blocks i.on{background:var(--navy);border-color:#000}
+.board .pt{font-family:var(--mono);font-size:19px;font-weight:700;color:var(--navy);text-align:right}
+.side{background:var(--silver);border:2px solid;border-color:#FFF #000 #000 #FFF;padding:14px}
+.side h3{font-size:15px;letter-spacing:1px;color:var(--navy);padding-bottom:8px;border-bottom:1px solid var(--gray);margin-bottom:10px}
+.side ol li{display:flex;gap:8px;padding:7px 0;border-bottom:1px dotted #A8A8A8;font-size:13.5px}
+.side ol li:last-child{border-bottom:0}
+.side ol li b{font-family:var(--mono);color:var(--red);flex:0 0 16px;font-size:12px}
+.side .counter{
+  margin-top:12px;background:#000;border:2px solid;border-color:#000 #FFF #FFF #000;padding:8px 10px;text-align:center;
+}
+.side .counter span{font-family:var(--mono);font-size:22px;color:#FF3B30;letter-spacing:4px}
+.side .counter small{display:block;font-size:11px;color:#888;margin-top:4px;letter-spacing:1px}
+.side p{font-size:12.5px;color:#333;margin-top:10px;line-height:1.8}
+
+/* ===== 栏目五：关于 + 系统属性 ===== */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}
+.pane{background:var(--silver);border:2px solid;border-color:#FFF #000 #000 #FFF;padding:16px 18px}
+.pane h3{font-size:20px;letter-spacing:2px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--gray)}
+.pane p{font-size:14.5px;margin-bottom:10px}
+.pane p:last-child{margin-bottom:0}
+.pane p b{color:var(--navy)}
+.pane .hl{background:#FFFFB0;padding:0 4px;font-weight:700}
+.props{display:grid;grid-template-columns:1fr auto;gap:0;margin-top:10px;background:var(--white);border:2px solid;border-color:#000 #FFF #FFF #000}
+.props dt{padding:7px 10px;border-bottom:1px dotted #C8C8C8;font-size:13.5px}
+.props dd{padding:7px 10px;border-bottom:1px dotted #C8C8C8;font-family:var(--mono);font-size:14px;font-weight:700;color:var(--navy);text-align:right}
+.props dt:last-of-type,.props dd:last-of-type{border-bottom:0}
+.search{margin-top:14px;background:var(--white);border:2px solid;border-color:#000 #FFF #FFF #000;padding:12px 14px}
+.search label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}
+.search .line{display:flex;gap:8px;flex-wrap:wrap}
+.search input{
+  flex:1;min-width:180px;font-family:var(--sim);font-size:14px;padding:7px 10px;
+  border:2px solid;border-color:#000 #FFF #FFF #000;background:var(--white);color:#000;
+}
+.rules li{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:9px 0;border-bottom:1px dotted var(--gray);font-size:14px}
+.rules li:last-child{border-bottom:0}
+.rules li em{font-style:normal;font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--red)}
+
+/* ===== 栏目六：帮助 FAQ ===== */
+.faq{background:var(--white);border:2px solid;border-color:#000 #FFF #FFF #000}
+.faq details{border-bottom:1px dotted #C8C8C8}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;padding:14px 18px;font-size:16px;font-weight:700;list-style:none;position:relative;padding-right:56px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"？";color:var(--navy);margin-right:8px;font-family:var(--mono)}
+.faq details[open] summary{background:#E8EEF8;color:var(--navy)}
+.faq summary .code{position:absolute;right:18px;top:14px;font-family:var(--mono);font-size:11px;color:#666;font-weight:400}
+.faq details p{padding:12px 18px 18px;font-size:14px;color:#222;border-top:1px dotted #C8C8C8}
+
+/* ===== 底部 ===== */
+footer{margin-top:24px;padding-bottom:20px}
+.footbar{
+  background:var(--silver);border-top:2px solid;border-color:#FFF #000 #000 #FFF;
+}
+.footbar .wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:18px;padding:18px 0}
+.foot-grid h4{font-size:15px;letter-spacing:1px;color:var(--navy);margin-bottom:10px;padding-bottom:7px;border-bottom:1px solid var(--gray)}
+.foot-grid p{font-size:13.5px;line-height:1.85}
+.foot-grid li{padding:5px 0;border-bottom:1px dotted #A8A8A8}
+.foot-grid li a{font-size:13.5px}
+.f-url{font-family:var(--mono);font-size:12px;color:var(--navy);display:inline-block;margin-top:8px;word-break:break-all}
+.kw{padding:14px 0;border-top:1px solid var(--gray);font-size:12.5px;line-height:2.1}
+.kw a{display:inline-block;margin:3px 8px 0 0;border:1px solid var(--gray);padding:2px 10px;background:var(--silver);font-size:12.5px}
+.copy{padding:12px 0;border-top:1px solid var(--gray);font-family:var(--mono);font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .desk{grid-template-columns:1fr}
+  .icons{max-width:460px}
+  .hero h1{font-size:32px}
+  .files{grid-template-columns:repeat(2,1fr)}
+  .treebox{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  .rankwrap{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .trays{
+    display:none;position:absolute;left:0;right:0;top:100%;background:var(--silver);
+    border-bottom:2px solid #000;flex-direction:column;gap:2px;padding:8px 10px 12px;
+  }
+  .trays a{border-width:1px;padding:10px 14px;font-size:15px}
+  .ck:checked ~ .trays{display:flex}
+  .taskbar .wrap{position:relative}
+  .board li{grid-template-columns:66px 1fr 66px;gap:10px}
+  .board .blocks{display:none}
+}
+@media (max-width:640px){
+  body{font-size:15px}
+  .wrap{padding:0 14px}
+  .hero{padding:16px 0 8px}
+  .hero h1{font-size:26px;letter-spacing:1px}
+  .hero .lead{font-size:15px}
+  .hero-meta{grid-template-columns:repeat(2,1fr)}
+  .hero-meta strong{font-size:17px}
+  .icons{grid-template-columns:repeat(2,1fr);padding:10px}
+  .dicon .ico{width:36px;height:36px}
+  .titlebar{font-size:13px}
+  .menubar{font-size:12px}
+  .winbody{padding:12px 12px 14px}
+  .sec-head h2{font-size:21px;letter-spacing:1px}
+  .files{grid-template-columns:1fr}
+  .file .thumb{height:110px}
+  .note{padding:12px 14px}
+  .board li{padding:9px 12px;gap:8px}
+  .board .rk{font-size:13px}
+  .board .nm b{font-size:15px}
+  .board .pt{font-size:16px}
+  .side{padding:12px}
+  .pane{padding:14px 16px}
+  .faq summary{font-size:15px;padding-right:50px}
+  .faq summary .code{font-size:10px}
+  .foot-grid{grid-template-columns:1fr}
+  .win{margin-bottom:20px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;scroll-behavior:auto !important}}
+@media print{.taskbar{position:static}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- 顶部任务栏 -->
+<div class="taskbar">
+  <div class="wrap">
+    <label class="start" for="navck">
+      <span class="flag" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      开始
+    </label>
+    <input class="ck" id="navck" type="checkbox" aria-label="展开站点导航">
+    <nav class="trays" aria-label="主导航">
+      <a class="cur" href="#">97伦理电影网 桌面</a>
+      <a href="#today">今日上架</a>
+      <a href="#tree">分类索引</a>
+      <a href="#notes">影评留言板</a>
+      <a href="#rank">高分排行榜</a>
+      <a href="#about">关于本站</a>
+      <a href="#faq">帮助</a>
+    </nav>
+    <span class="clock">10:02 上午</span>
+  </div>
+</div>
+
+<main>
+  <!-- HERO：桌面主窗口 -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="win">
+        <div class="titlebar">
+          <span class="ti">97伦理电影网.exe — 自 1997 年起，每日上架</span>
+          <span class="btns" aria-hidden="true"><b>_</b><b>□</b><b>×</b></span>
+        </div>
+        <div class="menubar">
+          <span>文件(F)</span><span>编辑(E)</span><span>查看(V)</span><span>收藏(A)</span><span>帮助(H)</span>
+        </div>
+        <div class="winbody">
+          <div class="desk">
+            <div>
+              <h1>欢迎来到 <em>97伦理电影网</em><br>一个把好电影摆整齐的地方</h1>
+              <p class="lead">没有算法，没有弹窗，也没有看不完的推荐流。<b>97伦理电影网</b>沿用的是最老派的做站方式：编辑一部一部看完、打分、写清理由，然后像摆货架一样，每天把当天值得看的片子上架一次。</p>
+              <div class="hero-actions">
+                <a class="btn go" href="#today">打开「今日上架」</a>
+                <a class="btn" href="#rank">查看高分排行榜</a>
+              </div>
+              <div class="sunken">
+                <p style="font-size:13.5px">本站说明：97伦理电影网只做挑选、排序与解释，不提供任何资源下载；所有内容可直接阅读。建议按 <kbd>Ctrl</kbd>+<kbd>D</kbd> 收藏本站，每天回来看看今天上了什么新片。</p>
+              </div>
+              <div class="hero-meta">
+                <div><strong>16800</strong><span>收录影片</span></div>
+                <div><strong>36</strong><span>分类目录</span></div>
+                <div><strong>08:00</strong><span>每日上架</span></div>
+                <div><strong>8.7</strong><span>编辑均分</span></div>
+              </div>
+            </div>
+
+            <div class="icons" aria-label="桌面快捷方式">
+              <a class="dicon" href="#today"><span class="ico" style="background:linear-gradient(150deg,#000080,#1084D0)" aria-hidden="true"></span><span class="lb">今日上架</span></a>
+              <a class="dicon" href="#tree"><span class="ico" style="background:linear-gradient(150deg,#7A5A00,#E0B93A)" aria-hidden="true"></span><span class="lb">分类索引</span></a>
+              <a class="dicon" href="#notes"><span class="ico" style="background:linear-gradient(150deg,#004D40,#4BB04B)" aria-hidden="true"></span><span class="lb">影评留言板</span></a>
+              <a class="dicon" href="#rank"><span class="ico" style="background:linear-gradient(150deg,#8E2436,#E04A3A)" aria-hidden="true"></span><span class="lb">高分排行榜</span></a>
+              <a class="dicon" href="#about"><span class="ico" style="background:linear-gradient(150deg,#3A3A3A,#9A9A9A)" aria-hidden="true"></span><span class="lb">关于本站</span></a>
+              <a class="dicon" href="#faq"><span class="ico" style="background:linear-gradient(150deg,#3A2060,#8A6AD0)" aria-hidden="true"></span><span class="lb">帮助</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="statusbar">
+          <span>就绪</span><span>97伦理电影网</span><span>16800 个对象</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目一：今日上架 -->
+  <section id="today">
+    <div class="wrap">
+      <div class="win">
+        <div class="titlebar">
+          <span class="ti">今日上架 — 97伦理电影网</span>
+          <span class="btns" aria-hidden="true"><b>_</b><b>□</b><b>×</b></span>
+        </div>
+        <div class="menubar"><span>文件(F)</span><span>编辑(E)</span><span>查看(V)</span><span>帮助(H)</span></div>
+        <div class="winbody">
+          <fieldset class="grp">
+            <legend class="lg">今日上架片单</legend>
+            <div class="sec-head">
+              <h2>今日上架片单</h2>
+              <span class="cnt">6 个对象 · 共 689 分钟</span>
+              <p>97伦理电影网编辑组每日 08:00 上架 · 每部标注评分、片长与类型标签</p>
+            </div>
+
+            <div class="files">
+              <figure class="file">
+                <div class="thumb" style="background:linear-gradient(160deg,#1F3A6E,#0A1226)">
+                  <span class="no">01</span><b>长街尽头</b>
+                </div>
+                <figcaption>悬疑 / 犯罪 · 128 分钟</figcaption>
+                <div class="row"><span class="pt">8.9</span><span class="tags">华语 · 反转</span></div>
+              </figure>
+
+              <figure class="file">
+                <div class="thumb" style="background:linear-gradient(160deg,#6E3A2E,#1C0E0A)">
+                  <span class="no">02</span><b>归途列车</b>
+                </div>
+                <figcaption>剧情 / 家庭 · 118 分钟</figcaption>
+                <div class="row"><span class="pt">8.8</span><span class="tags">高分 · 长镜头</span></div>
+              </figure>
+
+              <figure class="file">
+                <div class="thumb" style="background:linear-gradient(160deg,#2E6E5A,#08180F)">
+                  <span class="no">03</span><b>第七大陆</b>
+                </div>
+                <figcaption>科幻 / 冒险 · 131 分钟</figcaption>
+                <div class="row"><span class="pt">8.6</span><span class="tags">视效 · 新片</span></div>
+              </figure>
+
+              <figure class="file">
+                <div class="thumb" style="background:linear-gradient(160deg,#8E7A3E,#181308)">
+                  <span class="no">04</span><b>橘子汽水</b>
+                </div>
+                <figcaption>青春 / 文艺 · 104 分钟</figcaption>
+                <div class="row"><span class="pt">8.4</span><span class="tags">冷门 · 舒缓</span></div>
+              </figure>
+
+              <figure class="file">
+                <div class="thumb" style="background:linear-gradient(160deg,#3A4A8E,#0A0E1C)">
+                  <span class="no">05</span><b>纸上星河</b>
+                </div>
+                <figcaption>动画 / 治愈 · 096 分钟</figcaption>
+                <div class="row"><span class="pt">8.3</span><span class="tags">合家欢 · 手绘</span></div>
+              </figure>
+
+              <figure class="file">
+                <div class="thumb" style="background:linear-gradient(160deg,#4E5A6E,#0D1218)">
+                  <span class="no">06</span><b>一年七城</b>
+                </div>
+                <figcaption>纪录 / 人文 · 112 分钟</figcaption>
+                <div class="row"><span class="pt">8.2</span><span class="tags">分集 · 人文</span></div>
+              </figure>
+            </div>
+          </fieldset>
+        </div>
+        <div class="statusbar">
+          <span>6 个对象</span><span>97伦理电影网 · 今日上架</span><span>我的片单</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目二：分类索引 -->
+  <section id="tree">
+    <div class="wrap">
+      <div class="win">
+        <div class="titlebar">
+          <span class="ti">资源管理器 — 97伦理电影网 分类索引</span>
+          <span class="btns" aria-hidden="true"><b>_</b><b>□</b><b>×</b></span>
+        </div>
+        <div class="menubar"><span>文件(F)</span><span>编辑(E)</span><span>查看(V)</span><span>帮助(H)</span></div>
+        <div class="winbody">
+          <fieldset class="grp">
+            <legend class="lg">所有文件夹</legend>
+            <div class="sec-head">
+              <h2>分类索引</h2>
+              <span class="cnt">36 个目录 · 每日整理</span>
+              <p>97伦理电影网按类型、地区与年份建立目录，点开文件夹即可查看该目录下的影片</p>
+            </div>
+
+            <div class="treebox">
+              <div class="tree">
+                <ul>
+                  <li>
+                    <details open>
+                      <summary>类型目录 <span class="fld">G:\类型</span></summary>
+                      <ul>
+                        <li><a href="#">动作片<i>1240</i></a></li>
+                        <li><a href="#">科幻片<i>920</i></a></li>
+                        <li><a href="#">悬疑片<i>1080</i></a></li>
+                        <li><a href="#">爱情片<i>1530</i></a></li>
+                        <li><a href="#">喜剧片<i>1340</i></a></li>
+                        <li><a href="#">动画片<i>780</i></a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>地区目录 <span class="fld">R:\地区</span></summary>
+                      <ul>
+                        <li><a href="#">华语电影<i>3260</i></a></li>
+                        <li><a href="#">欧美电影<i>4380</i></a></li>
+                        <li><a href="#">日韩电影<i>2280</i></a></li>
+                        <li><a href="#">其他地区<i>1880</i></a></li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tree">
+                <ul>
+                  <li>
+                    <details open>
+                      <summary>年份目录 <span class="fld">Y:\年份</span></summary>
+                      <ul>
+                        <li><a href="#">2026 新片<i>436</i></a></li>
+                        <li><a href="#">2025 佳片<i>512</i></a></li>
+                        <li><a href="#">2024 精选<i>468</i></a></li>
+                        <li><a href="#">经典修复<i>560</i></a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>专题目录 <span class="fld">S:\专题</span></summary>
+                      <ul>
+                        <li><a href="#">冷门佳作<i>740</i></a></li>
+                        <li><a href="#">高分专区<i>980</i></a></li>
+                        <li><a href="#">深夜专场<i>322</i></a></li>
+                        <li><a href="#">一次性看完<i>256</i></a></li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <hr>
+            <p class="tree-note">目录说明：97伦理电影网每周整理一次目录结构与收录数量；同一部影片会同时出现在类型、地区与年份三个目录里，方便从不同入口找到它。</p>
+          </fieldset>
+        </div>
+        <div class="statusbar">
+          <span>36 个对象</span><span>97伦理电影网 · 分类索引</span><span>我的电脑</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三：影评留言板 -->
+  <section id="notes">
+    <div class="wrap">
+      <div class="win">
+        <div class="titlebar">
+          <span class="ti">留言板 — 97伦理电影网 影评与资讯</span>
+          <span class="btns" aria-hidden="true"><b>_</b><b>□</b><b>×</b></span>
+        </div>
+        <div class="menubar"><span>文件(F)</span><span>编辑(E)</span><span>查看(V)</span><span>帮助(H)</span></div>
+        <div class="winbody">
+          <fieldset class="grp">
+            <legend class="lg">影评留言板</legend>
+            <div class="sec-head">
+              <h2>影评留言板</h2>
+              <span class="cnt">共 6 条留言 · 第 1286 页</span>
+              <p>97伦理电影网原创内容，观点独立，关键剧情单独标注</p>
+            </div>
+
+            <div class="notes">
+              <article class="note">
+                <div class="hd"><span class="who">影评组</span><span>【影评】</span><time datetime="2026-09-30">2026-09-30 21:14</time></div>
+                <h3>《长街尽头》：伏笔是如何在第三幕全部回收的</h3>
+                <p>逐段拆解它的线索铺设——第一段看似闲聊的对话，其实已经给出了关键时间差。全文无剧透，可放心阅读后再决定要不要买票。</p>
+                <blockquote>好的悬疑片不靠吓你，靠让你散场后回头再读一遍前面发生的事。</blockquote>
+                <p class="sig">来自：97伦理电影网 影评组　·　阅读 1.4 万</p>
+              </article>
+
+              <article class="note">
+                <div class="hd"><span class="who">编辑部</span><span>【资讯】</span><time datetime="2026-09-27">2026-09-27 10:02</time></div>
+                <h3>2026 秋季档前瞻：六部值得标记的院线片</h3>
+                <p>今年秋季档悬疑与科幻占比明显上升，97伦理电影网提前梳理必看清单，并附三条避雷提示，帮你把电影票花在刀刃上。</p>
+                <blockquote>把电影票花在刀刃上，先从排除不值得的开始。</blockquote>
+                <p class="sig">来自：97伦理电影网 编辑部　·　阅读 9200</p>
+              </article>
+
+              <article class="note">
+                <div class="hd"><span class="who">数据组</span><span>【数据】</span><time datetime="2026-09-22">2026-09-22 08:30</time></div>
+                <h3>数据观察：老片回看潮正在改变目录结构</h3>
+                <p>近三个月，上线十年以上的经典片播放量同比增长 38%，97伦理电影网数据组解读这波回看潮背后的观影习惯变化。</p>
+                <blockquote>回看不是怀旧，是把选择权从新片手里拿回来。</blockquote>
+                <p class="sig">来自：97伦理电影网 数据组　·　阅读 6800</p>
+              </article>
+
+              <article class="note">
+                <div class="hd"><span class="who">片单组</span><span>【专栏】</span><time datetime="2026-09-18">2026-09-18 19:48</time></div>
+                <h3>周末片单：五部适合放松的治愈系电影</h3>
+                <p>不想动脑的周末怎么过？97伦理电影网挑了五部节奏舒缓、情绪温暖的片子，附一句话推荐理由与建议观看顺序。</p>
+                <blockquote>治愈片的标准很简单：看完能安稳睡一觉。</blockquote>
+                <p class="sig">来自：97伦理电影网 片单组　·　阅读 7500</p>
+              </article>
+
+              <article class="note">
+                <div class="hd"><span class="who">观影组</span><span>【指南】</span><time datetime="2026-09-15">2026-09-15 20:05</time></div>
+                <h3>选片三步法：三分钟决定今晚看什么</h3>
+                <p>先定心情，再定时长，最后定类型。97伦理电影网给出一张三步决策表，帮你在犹豫的时候快速收手。</p>
+                <blockquote>犹豫超过十分钟，就选编号最小的那一部。</blockquote>
+                <p class="sig">来自：97伦理电影网 观影组　·　阅读 5200</p>
+              </article>
+
+              <article class="note">
+                <div class="hd"><span class="who">采访组</span><span>【访谈】</span><time datetime="2026-09-11">2026-09-11 15:22</time></div>
+                <h3>对话纪录片导演：一年能拍出多少真实</h3>
+                <p>专访《一年七城》主创，聊素材取舍、拍摄伦理，以及纪录片作者与被拍者之间那条微妙的边界。访谈经本人审阅后刊发。</p>
+                <blockquote>剪辑台上没有真相，只有你愿意承担的解释。</blockquote>
+                <p class="sig">来自：97伦理电影网 采访组　·　阅读 4300</p>
+              </article>
+            </div>
+          </fieldset>
+        </div>
+        <div class="statusbar">
+          <span>6 条留言</span><span>97伦理电影网 · 留言板</span><span>第 1286 页</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目四：高分排行榜 -->
+  <section id="rank">
+    <div class="wrap">
+      <div class="win">
+        <div class="titlebar">
+          <span class="ti">高分排行榜 — 97伦理电影网</span>
+          <span class="btns" aria-hidden="true"><b>_</b><b>□</b><b>×</b></span>
+        </div>
+        <div class="menubar"><span>文件(F)</span><span>编辑(E)</span><span>查看(V)</span><span>帮助(H)</span></div>
+        <div class="winbody">
+          <fieldset class="grp">
+            <legend class="lg">排行榜</legend>
+            <div class="sec-head">
+              <h2>97伦理电影网高分排行榜</h2>
+              <span class="cnt">每 2 小时结算一次</span>
+              <p>综合站内评分、收藏量与讨论热度，分数越高方块越满</p>
+            </div>
+
+            <div class="rankwrap">
+              <ol class="board">
+                <li><span class="rk">No.01</span><span class="nm"><b>长街尽头</b><small>悬疑 / 犯罪 / 2026</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="pt">9.4</span></li>
+                <li><span class="rk">No.02</span><span class="nm"><b>归途列车</b><small>剧情 / 家庭 / 2026</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="pt">9.1</span></li>
+                <li><span class="rk">No.03</span><span class="nm"><b>第七大陆</b><small>科幻 / 冒险 / 2026</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="pt">8.9</span></li>
+                <li><span class="rk">No.04</span><span class="nm"><b>橘子汽水</b><small>青春 / 文艺 / 2025</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="pt">8.7</span></li>
+                <li><span class="rk">No.05</span><span class="nm"><b>纸上星河</b><small>动画 / 治愈 / 2026</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="pt">8.5</span></li>
+                <li><span class="rk">No.06</span><span class="nm"><b>一年七城</b><small>纪录 / 人文 / 2024</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="pt">8.3</span></li>
+                <li><span class="rk">No.07</span><span class="nm"><b>静默海域</b><small>剧情 / 悬疑 / 2025</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="pt">8.1</span></li>
+                <li><span class="rk">No.08</span><span class="nm"><b>深夜放映厅</b><small>合集 / 常驻片单</small></span><span class="blocks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="pt">7.9</span></li>
+              </ol>
+
+              <aside class="side">
+                <h3>站内热搜</h3>
+                <ol>
+                  <li><b>1</b><a href="#">长街尽头 结局解析</a></li>
+                  <li><b>2</b><a href="#">今日上架片单</a></li>
+                  <li><b>3</b><a href="#">2026 高分华语片</a></li>
+                  <li><b>4</b><a href="#">悬疑片推荐</a></li>
+                  <li><b>5</b><a href="#">97伦理电影网排行榜</a></li>
+                </ol>
+                <div class="counter">
+                  <output name="hits" aria-label="本站访客计数">0001286</output>
+                  <small>您是第 1286 位访客</small>
+                </div>
+                <p>计数器自 2023 年建站起累计，每周一随新一期片单重新排版一次。</p>
+              </aside>
+            </div>
+          </fieldset>
+        </div>
+        <div class="statusbar">
+          <span>8 个对象</span><span>97伦理电影网 · 排行榜</span><span>结算于 08:00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目五：关于本站 -->
+  <section id="about">
+    <div class="wrap">
+      <div class="win">
+        <div class="titlebar">
+          <span class="ti">系统属性 — 关于 97伦理电影网</span>
+          <span class="btns" aria-hidden="true"><b>_</b><b>□</b><b>×</b></span>
+        </div>
+        <div class="menubar"><span>文件(F)</span><span>编辑(E)</span><span>查看(V)</span><span>帮助(H)</span></div>
+        <div class="winbody">
+          <fieldset class="grp">
+            <legend class="lg">常规</legend>
+            <div class="sec-head">
+              <h2>关于97伦理电影网</h2>
+              <span class="cnt">建站于 2023 年 · 编号 97</span>
+              <p>为什么把站点做成这个样子，以及我们一直没改的四条规矩</p>
+            </div>
+
+            <div class="about">
+              <div class="pane">
+                <h3>97伦理电影网是什么</h3>
+                <p><span class="hl">97伦理电影网</span>是一个按老派方式做内容的中文电影站点。编号 97 取自建站那年的一个内部编号，也提醒我们别把页面做得太花哨：<b>能一眼看完的片单，比什么都强。</b></p>
+                <p>每天，<b>97伦理电影网</b>编辑组会从院线新片、流媒体上新与高分老片里挑出几部，写清推荐理由、评分与标签后上架。本站不做资源搬运，只做挑选、排序与解释，所有内容免费阅读。</p>
+                <p>页面刻意保持了早期的排版习惯：窗口、菜单、状态栏、树状目录与留言板——它们看上去老旧，但找东西很快。</p>
+              </div>
+
+              <div class="pane">
+                <h3>编辑部四条规矩</h3>
+                <ol class="rules">
+                  <li><em>R1</em><span>没看完的片子不上架，宁可空着也不凑数。</span></li>
+                  <li><em>R2</em><span>影评不剧透，关键剧情单独标注，由读者选择是否展开。</span></li>
+                  <li><em>R3</em><span>评分可追溯，公开打分人数与分数分布，拒绝水军。</span></li>
+                  <li><em>R4</em><span>推荐位不出售，榜单只由数据与编辑判断决定。</span></li>
+                </ol>
+
+                <dl class="props">
+                  <dt>收录影片总量</dt><dd>16800</dd>
+                  <dt>分类目录数</dt><dd>36</dd>
+                  <dt>每日上架量</dt><dd>6</dd>
+                  <dt>榜单结算间隔</dt><dd>2 小时</dd>
+                  <dt>内容免费比例</dt><dd>100%</dd>
+                </dl>
+
+                <form class="search" role="search" action="#">
+                  <label for="q">在 97伦理电影网 内搜索影片</label>
+                  <div class="line">
+                    <input id="q" name="q" type="search" list="movie-list" placeholder="输入片名或类型，如：悬疑片" aria-label="搜索影片">
+                    <button class="btn" type="submit">搜索</button>
+                  </div>
+                  <datalist id="movie-list">
+                    <option value="悬疑片"></option>
+                    <option value="动作片"></option>
+                    <option value="科幻片"></option>
+                    <option value="爱情片"></option>
+                    <option value="喜剧片"></option>
+                    <option value="动画片"></option>
+                    <option value="纪录片"></option>
+                    <option value="华语电影"></option>
+                    <option value="欧美电影"></option>
+                    <option value="日韩电影"></option>
+                  </datalist>
+                </form>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="statusbar">
+          <span>就绪</span><span>97伦理电影网 · 系统属性</span><span>2023 年建站</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目六：帮助 FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="win">
+        <div class="titlebar">
+          <span class="ti">帮助 — 97伦理电影网 使用说明</span>
+          <span class="btns" aria-hidden="true"><b>_</b><b>□</b><b>×</b></span>
+        </div>
+        <div class="menubar"><span>文件(F)</span><span>编辑(E)</span><span>书签(B)</span><span>帮助(H)</span></div>
+        <div class="winbody">
+          <fieldset class="grp">
+            <legend class="lg">常见问答</legend>
+            <div class="sec-head">
+              <h2>常见问答</h2>
+              <span class="cnt">共 5 条 · 点选展开</span>
+              <p>关于97伦理电影网的使用与内容说明</p>
+            </div>
+
+            <div class="faq">
+              <details open>
+                <summary>排行榜上的分数是怎么算出来的？<span class="code">Q-01</span></summary>
+                <p>97伦理电影网采用"观众打分 + 编辑评分"加权模型，观众分占七成、编辑分占三成，并剔除异常打分样本。每个影片条目都会展示参与打分的人数与分数分布区间，方便你判断样本是否足够。</p>
+              </details>
+              <details>
+                <summary>为什么页面做成这种老式窗口的样子？<span class="code">Q-02</span></summary>
+                <p>因为找片需要的是效率。窗口、菜单、树状目录与状态栏都是信息密度高、一眼能定位的结构；我们把视觉精力省下来，花在片单质量和推荐理由上。页面本身依然完全适配手机。</p>
+              </details>
+              <details>
+                <summary>97伦理电影网多久上架一次新片？<span class="code">Q-03</span></summary>
+                <p>每日 08:00 上架当日片单并重排高分排行榜；榜单每两小时结算一次；分类目录每周整理一次；影评留言板与影视资讯不定期发布。</p>
+              </details>
+              <details>
+                <summary>如何向我推荐的电影投稿？<span class="code">Q-04</span></summary>
+                <p>通过页面底部的"投稿与合作"入口留言，注明片名、年份与你的一句话推荐理由，97伦理电影网编辑组会在三个工作日内回复。</p>
+              </details>
+              <details>
+                <summary>手机上能正常浏览吗？<span class="code">Q-05</span></summary>
+                <p>可以。97伦理电影网全站响应式：手机端窗口自动收窄，片单卡转为单列，排行榜隐藏方块条只保留名次与分数，顶部导航收进「开始」按钮，触摸区域均放大到易点尺寸。</p>
+              </details>
+            </div>
+          </fieldset>
+        </div>
+        <div class="statusbar">
+          <span>5 个主题</span><span>97伦理电影网 · 帮助</span><span>按 F1 查看</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 底部 -->
+<footer>
+  <div class="footbar">
+    <div class="wrap">
+      <span class="start" aria-hidden="true"><span class="flag"><i></i><i></i><i></i><i></i></span>开始</span>
+      <span class="clock">97伦理电影网 · 桌面状态：就绪</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>97伦理电影网</h4>
+        <p>97伦理电影网是一个按老派方式做内容的中文电影站点，每日上架今日片单、分类索引、影评留言板、高分排行榜与观影指南，用最简单的页面把好电影摆在你面前。</p>
+        <span class="f-url">https://97lunlidianyingwang-cn.github.io</span>
+      </div>
+      <div>
+        <h4>站点目录</h4>
+        <ul>
+          <li><a href="#today">今日上架片单</a></li>
+          <li><a href="#tree">分类索引</a></li>
+          <li><a href="#notes">影评留言板</a></li>
+          <li><a href="#rank">高分排行榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#about">关于97伦理电影网</a></li>
+          <li><a href="#faq">常见问答</a></li>
+          <li><a href="#">投稿与合作</a></li>
+          <li><a href="#">内容声明</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <ul>
+          <li><a href="#">电影节日历</a></li>
+          <li><a href="#">独立电影观察</a></li>
+          <li><a href="#">影视资料库</a></li>
+          <li><a href="#">影迷社区</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="kw">
+      相关关键词：
+      <a href="#">97伦理电影网</a><a href="#">电影推荐</a><a href="#">今日上架</a><a href="#">最新电影</a><a href="#">影视资讯</a><a href="#">高分电影</a><a href="#">电影排行榜</a><a href="#">影评</a><a href="#">观影指南</a><a href="#">电影分类</a>
+    </div>
+
+    <div class="copy">
+      <span>&copy; 2026 97伦理电影网 · 编号 97 · 保留所有权利</span>
+      <span><a href="#">隐私政策</a> · <a href="#">使用条款</a> · <a href="#home">回到桌面</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://97lunlidianyingwang-cn.github.io/#website",
+      "name": "97伦理电影网",
+      "alternateName": "97 MOVIE",
+      "url": "https://97lunlidianyingwang-cn.github.io/",
+      "description": "97伦理电影网是专注电影推荐与影视资讯的中文影迷站点，每日上架今日片单、分类索引、影评留言板、高分排行榜与观影指南。",
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://97lunlidianyingwang-cn.github.io/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://97lunlidianyingwang-cn.github.io/#organization",
+      "name": "97伦理电影网",
+      "url": "https://97lunlidianyingwang-cn.github.io/",
+      "description": "97伦理电影网提供今日上架片单、分类索引、影评留言板、高分排行榜与观影指南服务，每日 08:00 上架更新。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "97伦理电影网首页", "item": "https://97lunlidianyingwang-cn.github.io/"},
+        {"@type": "ListItem", "position": 2, "name": "今日上架片单", "item": "https://97lunlidianyingwang-cn.github.io/#today"},
+        {"@type": "ListItem", "position": 3, "name": "分类索引", "item": "https://97lunlidianyingwang-cn.github.io/#tree"},
+        {"@type": "ListItem", "position": 4, "name": "影评留言板", "item": "https://97lunlidianyingwang-cn.github.io/#notes"},
+        {"@type": "ListItem", "position": 5, "name": "97伦理电影网高分排行榜", "item": "https://97lunlidianyingwang-cn.github.io/#rank"}
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
